@@ -9,12 +9,32 @@ header {
     background-color: #007bff;
     color: white;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.header-content img {
+    max-height: 100px; /* Augmentez cette valeur pour une image plus grande */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -74,4 +94,12 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
+}
+
+.event-of-the-week {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;    
 }
