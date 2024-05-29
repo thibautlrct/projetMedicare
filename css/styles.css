@@ -59,6 +59,25 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content img {
+    max-height: 50px;
 }
 
 form {
