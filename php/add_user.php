@@ -39,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['user_id'])) {
         $conn->close();
         exit();
     }
-
     $stmt->close();
 
     // Ajouter l'utilisateur
