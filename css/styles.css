@@ -6,7 +6,6 @@ body {
     padding-bottom: 74px;
 }
 
-
 header {
     background-color: #007bff;
     color: white;
@@ -18,13 +17,11 @@ header {
     text-align: center;
 }
 
-
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .header-content h1 {
     margin: 0;

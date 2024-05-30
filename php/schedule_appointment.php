@@ -51,7 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['user_id'])) {
             echo "Erreur lors de la programmation du rendez-vous : " . $stmt->error;
         }
     }
-
     $stmt->close();
     $conn->close();
 } else {

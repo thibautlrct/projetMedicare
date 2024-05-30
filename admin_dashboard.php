@@ -18,6 +18,7 @@
     </header>
     <main>
         <h2>Gestion des utilisateurs</h2>
+        
         <?php
         if (isset($_SESSION['user_id'])) {
             include 'php/config.php';
