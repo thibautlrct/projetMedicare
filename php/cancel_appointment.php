@@ -16,7 +16,6 @@ if (isset($_GET['id']) && isset($_SESSION['user_id'])) {
     $stmt->close();
 
     if ($appointment) {
-
         // Vérifier les permissions
         $sql = "SELECT type_utilisateur FROM Utilisateurs WHERE id = ?";
         $stmt = $conn->prepare($sql);
@@ -27,7 +26,6 @@ if (isset($_GET['id']) && isset($_SESSION['user_id'])) {
         $stmt->close();
 
         if ($user['type_utilisateur'] === 'administrateur' || $appointment['client_id'] == $user_id || $user['type_utilisateur'] === 'medecin') {
-            
             // Supprimer le rendez-vous
             $sql = "DELETE FROM RendezVous WHERE id = ?";
             $stmt = $conn->prepare($sql);

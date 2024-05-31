@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $result->fetch_assoc();
         if (password_verify($password, $user['mot_de_passe'])) {
             echo "Login successful";
-            
             // Start session and redirect to a logged-in page
             session_start();
             $_SESSION['user_id'] = $user['id'];

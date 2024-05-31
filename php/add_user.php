@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['user_id'])) {
         $conn->close();
         exit();
     }
+
     $stmt->close();
 
     // Ajouter l'utilisateur
@@ -57,11 +58,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['user_id'])) {
 
             if ($stmt->execute()) {
                 echo "Nouveau médecin ajouté avec succès.";
+                sleep(2);
+                header("Location: ../admin_dashboard.php");
             } else {
                 echo "Erreur lors de l'ajout du médecin: " . $stmt->error;
             }
         } else {
             echo "Nouvel utilisateur ajouté avec succès.";
+
         }
     } else {
         echo "Erreur lors de l'ajout de l'utilisateur: " . $stmt->error;

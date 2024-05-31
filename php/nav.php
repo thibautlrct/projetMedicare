@@ -5,8 +5,8 @@ session_start();
 <nav>
     <ul>
         <li><a href="index.php">Accueil</a></li>
-        <li><a href="services.html">Tout Parcourir</a></li>
-        <li><a href="search.html">Recherche</a></li>
+        <li><a href="parcourir.php">Tout Parcourir</a></li>
+        <li><a href="search.php">Recherche</a></li>
         <?php
         if (isset($_SESSION['user_id'])) {
             include 'php/config.php';

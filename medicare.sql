@@ -2,6 +2,7 @@
 DROP DATABASE IF EXISTS medicare;
 
 CREATE DATABASE IF NOT EXISTS medicare;
+
 USE medicare;
 
 -- Table pour les utilisateurs
