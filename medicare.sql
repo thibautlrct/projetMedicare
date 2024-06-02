@@ -34,6 +34,17 @@ CREATE TABLE Medecins (
     FOREIGN KEY (utilisateur_id) REFERENCES Utilisateurs (id) ON DELETE CASCADE
 );
 
+CREATE TABLE `laboratoires_rdv` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `service_id` int DEFAULT NULL,
+  `date_time` datetime DEFAULT NULL,
+  `utilisateur_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `service_id` (`service_id`),
+  KEY `utilisateur_id` (`utilisateur_id`)
+);
+
+
 -- Table pour les rendez-vous
 CREATE TABLE RendezVous (
     id INT AUTO_INCREMENT PRIMARY KEY,
